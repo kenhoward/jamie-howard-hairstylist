@@ -53,6 +53,4 @@ app.config(function($routeProvider) {
 	
 })
 
-// updated
-
 		

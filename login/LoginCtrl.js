@@ -1,8 +1,9 @@
-var app = angular.module('firebaseLogin');
+var app = angular.module('noServer');
 
-app.controller('LoginCtrl', function ($scope, authService, $location) {
+app.controller('loginCtrl', function ($scope, authService, $location) {
   //Step 4 of Registration
   var loginCallback = function(user){
+    console.log(user)
     user.uid = user.uid.replace('simplelogin:', '');
     $scope.$apply(function(){
       $location.path('/dashboard/' + user.uid) // 'dashboard' can be whatever we want it to be BUT  needs to be consistent with app.js

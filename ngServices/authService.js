@@ -6,7 +6,13 @@ app.service('authService', function(){
   //Creates an object using the Firebase Constructor with our endpoint passed in
   var firebaseLogin = new Firebase(firebaseUrl);
 
-  var loginCallback = function(err, authData) {
+  var user = false;
+
+  this.getUser = function() {
+    return user;
+  }
+
+  var loginCallback = function(cb, err, authData) {
     if (err) {
       switch (err.code) {
         case "INVALID_EMAIL":
@@ -18,6 +24,7 @@ app.service('authService', function(){
     } else if (authData) {
         // user authenticated with Firebase
         console.log("Logged In! User ID: " + authData.uid);
+        user = authData
         cb(authData); //gives the authenticated user to our callback
     }
   };
@@ -27,7 +34,7 @@ app.service('authService', function(){
     firebaseLogin.authWithPassword({ // gives the credentials
       email : user.email,
       password : user.password
-    }, loginCallback);
+    }, loginCallback.bind(null, cb));
   };
 
   //Step 3 of Registration

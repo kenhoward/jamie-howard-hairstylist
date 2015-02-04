@@ -1,22 +1,18 @@
 <div class="container">
 
+	<div class='loginNotice'>
 
-		<input type="hidden" value="'.$_SESSION['loginid'].'" name="uid">  
+	 	<div ng-show='user'>
 
-		<div class="addacomment"><label for="title">Add a comment:</label></div>  
+			<div class="addComment"><label for="title">Add a comment:</label></div>  
 
-		<textarea rows="4" cols="50" placeholder='Enter Comment Here'></textarea>
+				<textarea rows="4" cols="50" placeholder='Enter Comment Here'></textarea>
 
-		<div class="submissionbutton"><input name="submit" type="submit" value="Submit"></div>
+				<!-- <button class='submit' ng-click=''>Submit</button>  -->
 
+		</div>
 
-
-
-
-
-
-
-
+	</div>
 
 </div>
 
