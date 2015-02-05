@@ -26,3 +26,31 @@ img {
 .port5 {
 	height: 450px;
 }
+
+.port6 {
+	height: 450px;
+}
+
+.port7 {
+	height: 450px;
+}
+
+.about1 {
+	height: 350px;
+}
+
+.about2 {
+	height: 400px;
+}
+
+.wedding {
+	height: 550px;
+}
+
+.services {
+	width: 450px;
+}
+
+#entryInfo {
+	border: solid;
+}

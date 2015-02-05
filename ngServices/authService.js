@@ -75,9 +75,7 @@ app.service('authService', function(){
                     cb(authData); // look for callback in the loginCtrl.js
                     /*
                     Alternative is to give each person a user ID
-
                     That would look like:
-
                     formatEmailForFirebase : function (authData.ui) to replace ('simplelogin:', '')).set(authData);
                     */
                     
@@ -87,5 +85,3 @@ app.service('authService', function(){
     });
   };
 });
-
-// updated

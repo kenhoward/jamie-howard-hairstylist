@@ -6,7 +6,7 @@ app.controller('loginCtrl', function ($scope, authService, $location) {
     console.log(user)
     user.uid = user.uid.replace('simplelogin:', '');
     $scope.$apply(function(){
-      $location.path('/dashboard/' + user.uid) // 'dashboard' can be whatever we want it to be BUT  needs to be consistent with app.js
+      $location.path('/blog/' /*'/dashboard/'' + user.uid*/) // 'dashboard' can be whatever we want it to be BUT  needs to be consistent with app.js
     });
   };
 

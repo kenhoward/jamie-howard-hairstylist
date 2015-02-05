@@ -34,6 +34,10 @@ app.config(function($routeProvider) {
 			templateUrl: 'login/login.html',
 			controller: 'loginCtrl'
 		})
+		// .when('/login', {
+		// 	templateUrl: 'login/login.html',
+		// 	controller: 'loginCtrl'
+		// })
 		// .when('/dashboard/:userId', {
 		// 	templateUrl: 'dashboard.html',
 		// 	controller: 'dashboardCtrl',
@@ -46,9 +50,9 @@ app.config(function($routeProvider) {
 		// 		}
 		// 	}
 		// })
-		.otherwise('/', {
-			redirectTo: '/'
-		})
+		// .otherwise('/', {
+		// 	redirectTo: '/'
+		// })
 			
 	
 })
