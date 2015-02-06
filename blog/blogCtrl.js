@@ -5,6 +5,3 @@ app.controller('blogCtrl', function($scope, authService) { //authService here if
 	console.log($scope.user)
 
 })
-
-
-//updated

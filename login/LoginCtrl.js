@@ -1,7 +1,7 @@
 var app = angular.module('noServer');
 
 app.controller('loginCtrl', function ($scope, authService, $location) {
-  //Step 4 of Registration
+  // This is Step 4 of Registration
   var loginCallback = function(user){
     console.log(user)
     user.uid = user.uid.replace('simplelogin:', '');

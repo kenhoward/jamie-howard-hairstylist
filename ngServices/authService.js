@@ -1,3 +1,5 @@
+// double check for inconsistencies
+
 var app = angular.module('noServer');
 
 app.service('authService', function(){

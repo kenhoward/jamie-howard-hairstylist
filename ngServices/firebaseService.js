@@ -11,5 +11,3 @@ app.service('firebaseService', function ($firebase) {
     return $firebase(new Firebase(firebaseUrl + 'users/' + userId + '/things')).$asArray();
   }
 })
-
-// updated

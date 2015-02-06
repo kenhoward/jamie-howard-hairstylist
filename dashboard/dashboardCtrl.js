@@ -13,5 +13,3 @@ app.controller('DashboardCtrl', function($scope, userReference, thingsReference)
     $scope.profile.$save();
   };
 });
-
-//updated
