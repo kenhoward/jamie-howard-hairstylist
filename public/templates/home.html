@@ -1,26 +1,28 @@
 <div class="container">
 	<div class="col-sm-6">
-		<h3>About</h3>
+		<p>About</p>
 
-		<h3>Portfolio</h3>
+		<a href="#/about"><img class='aboutMe' alt='click to learn about me' src='/images/homeAboutMe.jpg' /></a>
 
-			<img class='about1' src='/images/about1.jpg' />
+		<p>Portfolio</p>
 
-		<h3>Services</h3>
+			<img src='/images/about1.jpg' />
 
-			<img class='about1' src='/images/about1.jpg' />
+		<p>Services</p>
 
-		<h3>Weddings</h3>
+			<img src='/images/about1.jpg' />
 
-			<img class='about1' src='/images/about1.jpg' />
+		<p>Weddings</p>
 
-		<h3>blog</h3>
+			<img src='/images/about1.jpg' />
 
-			<img class='about1' src='/images/about1.jpg' />
+		<p>blog</p>
 
-		<h3>Contact</h3>
+			<img src='/images/about1.jpg' />
 
-			<img class='about1' src='/images/about1.jpg' />
+		<p>Contact</p>
+
+			<img src='/images/about1.jpg' />
 	</div>
 </div>
 
@@ -28,4 +30,14 @@
 Link headers tag to its corresponding view. 
 Include picture with each item
 create carousel animation going through various images
-Move around the header tags -->
+Move around the header tags
+
+controller
+	$scope.toLogin = function() {
+		$location.path('/login');
+	}
+
+template view
+	just ng-click='toLogin'
+
+ -->
