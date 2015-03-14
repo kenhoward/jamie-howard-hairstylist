@@ -1,4 +1,4 @@
-var app = angular.module('noServer', ['ngRoute', 'firebase']);
+var app = angular.module('noServer', ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider
