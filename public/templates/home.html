@@ -1,24 +1,48 @@
 <div class="container">
-	<div class="col-sm-6">
-		<h4>About</h4>
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-sm-4">
+				<h4>About</h4>
 
-		<a href="#/about"><img class='aboutMe' alt='click to learn about me' src='/images/homeAboutMe.jpg' /></a>
+				<a href="#/about"><img class='home' alt='click to learn about me' src='/images/homeAboutMe.jpg' /></a>
+			</div>
+			<div ng-controller="homeCtrl" class="col-sm-4">
+				<div>
+					<carousel interval="homeInterval">
+						<slide ng-repeat="slide in slides">
+							<img ng-src="{{slide}}" style="margin:auto">
+						</slide>
+					</carousel>
+				</div>
+			</div>
 
-		<h4>Portfolio</h4>
+			<div class="col-sm-4">
+				<h4>Contact</h4>
 
-		<a href="#/portfolio"><img class='aboutMe' alt='click to view my portfolio' src='/images/homePortfolio.jpg' /></a>
+				<a href="#/contact"><img class='home' alt='click to contact me' src='/images/homeContact.jpg' /></a>
+			</div>
+		</div>
 
-		<h4>Services</h4>
 
-		<a href="#/services"><img class='aboutMe' alt='click to see my services' src='/images/homeServices.jpg' /></a>
+		<div class="row">
+			<div class="col-sm-4">
+				<h4>Portfolio</h4>
 
-		<h4>Weddings</h4>
+				<a href="#/portfolio"><img class='home' alt='click to view my portfolio' src='/images/homePortfolio.jpg' /></a>
+			</div>
+		
+			<div class="col-sm-4">
+				<h4>Services</h4>
 
-		<a href="#/weddings"><img class='aboutMe' alt='click to learn about my wedding services' src='/images/homeWeddings.jpg' /></a>
+				<a href="#/services"><img class='home' alt='click to see my services' src='/images/homeServices.jpg' /></a>
+			</div>
+			
+			<div class="col-sm-4">
+				<h4>Weddings</h4>
 
-		<h4>Contact</h4>
-
-		<a href="#/contact"><img class='aboutMe' alt='click to contact me' src='/images/homeContact.jpg' /></a>
+				<a href="#/weddings"><img class='home' alt='click to learn about my wedding services' src='/images/homeWeddings.jpg' /></a>
+			</div>
+		</div>
 	</div>
 </div>
 
