@@ -3,7 +3,7 @@ var app = angular.module('noServer');
 app.controller('servicesCtrl', function($scope, $http) {
 	$scope.pictures = [];
 
-	$scope.getPictures = 	(function() { //creating a truthy
+	$scope.getPictures = (function() { //creating a truthy
 		$http({
 			method: 'GET',
 			url: '/instagramFeed'
@@ -25,4 +25,15 @@ app.controller('servicesCtrl', function($scope, $http) {
 		})
 	})()
 
+	// $scope.getProfile = (function() {
+	// 	$http ({
+	// 		method: 'GET',
+	// 		url: '/jamieInstagram'
+	// 	}).then(function(res) {
+	// 		console.log(res.data)
+	// 		// for (var i = 0; i < data.data.length; i++) {
+	// 		// 	var profileObj = {};
+	// 		// }
+	// 	})
+	// })()
 })
