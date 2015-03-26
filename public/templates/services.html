@@ -151,15 +151,13 @@
 
 	<!-- <button ng-click="getPictures()">Do it</button> -->
 
-	<div class="well">
-		test
-	</div>
+	<div class="well" ng-repeat="header in titles">
+		{{header.username}}
+	</div> <!-- end profile details -->
 
 	<div ng-repeat="picture in pictures">
 		<a target="_blank" href="{{picture.urlLink}}"><img src="{{picture.lowRes}}" /></a>
-	</div>	
-
-		<!-- I WANT TO PUT MY INSTAGRAM API HERE -->
+	</div>	<!-- end pictures -->
 
 	</div>
 
