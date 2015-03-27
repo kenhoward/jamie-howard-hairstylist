@@ -152,7 +152,16 @@
 	<!-- <button ng-click="getPictures()">Do it</button> -->
 
 	<div class="well" ng-repeat="header in titles">
-		{{header.username}}
+		<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" />
+		{{header.username}} <br>
+		<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-block btn-social btn-instagram" id="btnFix"> Follow Me!
+		    <i class="fa fa-instagram"></i>
+		</a>		
+		
+		{{header.followers}}
+		{{header.follows}}
+		{{header.posts}}
+
 	</div> <!-- end profile details -->
 
 	<div ng-repeat="picture in pictures">

@@ -10,7 +10,7 @@ app.controller('servicesCtrl', function($scope, $http) {
 			method: 'GET',
 			url: '/instagramFeed'
 		}).then(function(res) {
-			console.log(res.data.data);
+			// console.log(res.data.data);
 			var data = res.data.data;
 			for (var i = 0; i < data.length; i++) {
 				var instaObj = {};
@@ -32,16 +32,15 @@ app.controller('servicesCtrl', function($scope, $http) {
 			method: 'GET',
 			url: '/jamieInstagram'
 		}).then(function(res) {
-			console.log(res.data);
-			var data = res.data
-			// for (var i = 0; i < data.length; i++) { // previously as data.data.length 
-				var profileObj = {};
-				profileObj.username = data.username
-				// profileObj.profilePic = data.profile_picture
-				// profileObj.followers = data.counts.followed_by
-				// profileObj.follows = data.counts.follows
-				// profileObj.posts = data.counts.media
-				$scope.titles.push(profileObj);
+			// console.log(res.data);
+			var data = res.data.data
+			var profileObj = {};
+			profileObj.username = data.username
+			profileObj.profilePic = data.profile_picture
+			profileObj.followers = data.counts.followed_by
+			profileObj.follows = data.counts.follows
+			profileObj.posts = data.counts.media
+			$scope.titles.push(profileObj);
 			})
 	})()
 })
