@@ -3,6 +3,27 @@
 	<h2>Services and pricing</h2>
 
 	<div class="col-sm-6">
+		
+		<h2>Editorial Work</h2>
+			<h6>On location styling and/or make-up for print or film</h6>
+		
+				<table class="table table-hover">
+					<tr>	
+						<td>Full Day</td>
+						<td>$400</td>
+					</tr>
+					<tr>
+						<td>Half-Day (Less than 4 hrs)</td>
+						<td>$200</td>
+					</tr>
+					<tr>
+						<td>Kit Fee</td>
+						<td>$25+</td>
+					</tr>
+				</table>
+
+			<h6><mark>Possible location fee</mark></h6>
+
 		<h2>Salon Work</h2>
 		
 		<h4>Shape</h4>
@@ -83,7 +104,11 @@
 					<td>$150</td>
 				</tr>
 			</table>
-			﻿
+
+	</div> <!-- left side details -->
+
+	<div class="col-sm-6">
+
 		<h4>​​Occasion</h4>
 
 			<table class="table table-hover">
@@ -108,7 +133,7 @@
 					<td>$25</td>
 				</tr>
 			</table>
-			
+
 		<h4>Healthy hair</h4>
 
 			<table class="table table-hover">
@@ -122,28 +147,7 @@
 				</tr>
 			</table>
 
-	</div>	
 
-		<div class="col-sm-6">
-		<h2>Editorial Work</h2>
-		<h6>On location styling and/or make-up for print or film</h6>
-	
-			<table class="table table-hover">
-				<tr>	
-					<td>Full Day</td>
-					<td>$400</td>
-				</tr>
-				<tr>
-					<td>Half-Day (Less than 4 hrs)</td>
-					<td>$200</td>
-				</tr>
-				<tr>
-					<td>Kit Fee</td>
-					<td>$25+</td>
-				</tr>
-			</table>
-
-		<h6><mark>Possible location fee</mark></h6>
 
 		<!-- <img class='services' src='/images/services.jpg'> -->
 
@@ -151,24 +155,33 @@
 
 	<!-- <button ng-click="getPictures()">Do it</button> -->
 
-	<div class="well" ng-repeat="header in titles">
-		<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" />
-		{{header.username}} <br>
-		<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-block btn-social btn-instagram" id="btnFix"> Follow Me!
-		    <i class="fa fa-instagram"></i>
-		</a>		
-		
-		{{header.followers}}
-		{{header.follows}}
-		{{header.posts}}
+<!-- 		<div class="container">
+			
+				<div class="col-sm-6">
 
-	</div> <!-- end profile details -->
+						<div ng-repeat="header in titles">
+							<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" /> <br>
+							{{header.username}} <br>
+							<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-block btn-social btn-instagram" id="btnFix"> Follow
+							    <i class="fa fa-instagram"></i>
+							</a>		
+							
+							{{header.followers}}
+							{{header.follows}}
+							{{header.posts}}
 
-	<div ng-repeat="picture in pictures">
-		<a target="_blank" href="{{picture.urlLink}}"><img src="{{picture.lowRes}}" /></a>
-	</div>	<!-- end pictures -->
+						</div>
 
+				</div>
+
+				<div class="col-sm-6">
+
+					<div ng-repeat="picture in pictures">
+						<a target="_blank" href="{{picture.urlLink}}"><img src="{{picture.lowRes}}" /></a>
+					</div>
+
+				</div>
+
+		</div> -->
 	</div>
-
-	<div class="col-sm-4"></div>
 </div>
