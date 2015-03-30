@@ -179,7 +179,10 @@
 				<div> <!-- carousel -->
 					<carousel interval="serviceInterval">
 						<slide ng-repeat="picture in pictures">
-							<img href="{{picture.urlLink}}" ng-src="{{picture.lowRes}}" style="margin:auto">
+							<a target="_blank" href="{{picture.urlLink}}"><img ng-src="{{picture.lowRes}}" style="margin:auto"></a>
+						        <div class="carousel-caption">
+						          <p><i class="fa fa-comment-o"></i> {{picture.comments}} | <i class="fa fa-heart-o"></i> {{picture.likes}}</p>
+						        </div>
 						</slide>
 					</carousel>
 				</div> <!-- carousel -->
