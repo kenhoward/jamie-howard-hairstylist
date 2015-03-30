@@ -43,6 +43,11 @@ app.controller('servicesCtrl', function($scope, $http) {
 			$scope.titles.push(profileObj);
 			})
 	})()
+
+	$scope.serviceInterval = 3000;
+
+
+
 })
 
 // before: this returned the object data I needed

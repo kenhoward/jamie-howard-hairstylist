@@ -173,7 +173,26 @@
 						</div>
 				</div>	<!-- end instagram Jamie row -->
 
+<!-- testing -->
 
+
+				<div> <!-- carousel -->
+					<carousel interval="serviceInterval">
+						<slide ng-repeat="picture in pictures">
+							<img href="{{picture.urlLink}}" ng-src="{{picture.lowRes}}" style="margin:auto">
+						</slide>
+					</carousel>
+				</div> <!-- carousel -->
+
+
+<!-- end of testing -->
+
+<!--
+WORKING CODE
+					<div ng-repeat="picture in pictures"> 
+						<a target="_blank" href="{{picture.urlLink}}"><img src="{{picture.lowRes}}" /></a>
+					</div> 
+-->
 
 	</div> <!-- end right side details -->
 </div>
