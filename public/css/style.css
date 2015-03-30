@@ -7,36 +7,8 @@ img {
 	padding: 10px;
 }
 
-.port1 {
+.portfolio {
 	height: 450px;
-}
-
-.port2 {
-	height: 450px;
-}
-
-.port3 {
-	height: 450px;
-}
-
-.port4 {
-	height: 450px;
-}
-
-.port5 {
-	height: 450px;
-}
-
-.port6 {
-	height: 450px;
-}
-
-.port7 {
-	height: 450px;
-}
-
-.port7 {
-	height: 10px;
 }
 
 .about1 {
@@ -69,6 +41,30 @@ img {
 
 #btnFix {
 	width: 8em;
+}
+
+.apiDetails {
+	text-align: center;	
+}
+
+.homeAboutMe {
+	width: 400px;
+}
+
+.home {
+	height: 350px;
+}
+
+.homeAboutTitle {
+	text-align: center;
+}
+
+.homePortfolio {
+	width: 340px;
+}
+
+.homeWeddings {
+	width: 340px;
 }
 
 /* BOOTSWATCH */

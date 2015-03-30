@@ -107,7 +107,7 @@
 
 	</div> <!-- left side details -->
 
-	<div class="col-sm-6">
+	<div class="col-sm-6"> <!-- begin right side details -->
 
 		<h4>​​Occasion</h4>
 
@@ -125,7 +125,7 @@
 					<td>$50</td>
 				</tr>
 				<tr>
-					<td>Add Airbrush</td>
+					<td>Add Airbrush to service</td>
 					<td>$10</td>
 				</tr>
 				<tr>
@@ -148,6 +148,47 @@
 			</table>
 
 
+		
+
+
+
+				<div class="row"> <!-- begin instagram Jamie row -->
+
+						<div ng-repeat="header in titles" class="well">
+							<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" />				
+							<div class="apiDetails">
+								<ul>
+									| Posts {{header.posts}} |
+									Followers {{header.followers}} |
+									Follows {{header.follows}} |
+								</ul>
+							</div>
+							
+							<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-social btn-instagram">
+								<i class="fa fa-instagram"></i> Follow Me
+							</a>
+
+
+
+						</div>
+				</div>	<!-- end instagram Jamie row -->
+
+
+
+	</div> <!-- end right side details -->
+</div>
+
+
+
+
+
+		<!-- <div> instagram photos -->
+		<!-- </div>  instagram photos -->
+
+
+
+
+
 
 		<!-- <img class='services' src='/images/services.jpg'> -->
 
@@ -155,9 +196,9 @@
 
 	<!-- <button ng-click="getPictures()">Do it</button> -->
 
-<!-- 		<div class="container">
+<!-- 
 			
-				<div class="col-sm-6">
+			
 
 						<div ng-repeat="header in titles">
 							<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" /> <br>
@@ -183,5 +224,4 @@
 				</div>
 
 		</div> -->
-	</div>
-</div>
+
