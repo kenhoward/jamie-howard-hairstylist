@@ -153,9 +153,10 @@
 
 
 				<div class="row"> <!-- begin instagram Jamie row -->
-
-						<div ng-repeat="header in titles" class="well">
-							<img class="img-circle" id="jamieInstaPic" ng-src="{{header.profilePic}}" />				
+						<div ng-repeat="header in titles">
+							<div id="jamieInstaPic">
+								<img class="img-circle" ng-src="{{header.profilePic}}" />
+							</div>
 							<div class="apiDetails">
 								<ul>
 									| Posts {{header.posts}} |
@@ -163,35 +164,28 @@
 									Follows {{header.follows}} |
 								</ul>
 							</div>
-							
-							<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-social btn-instagram">
-								<i class="fa fa-instagram"></i> Follow Me
-							</a>
-
-
-
+							<div class="instagramButton">
+								<a target="_blank" href="https://instagram.com/jamiehowardhair" class="btn btn-social btn-instagram">
+									<i class="fa fa-instagram"></i> Follow Me
+								</a>
+							</div>
 						</div>
 				</div>	<!-- end instagram Jamie row -->
 
-<!-- testing -->
-
-
-				<div> <!-- carousel -->
+				<div class="serviceCarouselSizing"> <!-- carousel -->
 					<carousel interval="serviceInterval">
 						<slide ng-repeat="picture in pictures">
 							<a target="_blank" href="{{picture.urlLink}}"><img ng-src="{{picture.lowRes}}" style="margin:auto"></a>
 						        <div class="carousel-caption">
 						          <p><i class="fa fa-comment-o"></i> {{picture.comments}} | <i class="fa fa-heart-o"></i> {{picture.likes}}</p>
+						          <!-- <i class="fa fa-clock-o"></i>{{picture.timestamp | date: 'short'}} -->
 						        </div>
 						</slide>
 					</carousel>
 				</div> <!-- carousel -->
 
-
-<!-- end of testing -->
-
 <!--
-WORKING CODE
+WORKING CODE (ALTERNATIVE)
 					<div ng-repeat="picture in pictures"> 
 						<a target="_blank" href="{{picture.urlLink}}"><img src="{{picture.lowRes}}" /></a>
 					</div> 
@@ -246,4 +240,3 @@ WORKING CODE
 				</div>
 
 		</div> -->
-
